@@ -1,10 +1,18 @@
 package nl.tuv.parser.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
 /**
  * Created by kristisvaskys on 12/11/2016.
  */
+@Entity
 public class Manufacturer {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     private String name;
