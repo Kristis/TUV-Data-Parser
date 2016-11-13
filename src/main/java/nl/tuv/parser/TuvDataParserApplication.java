@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @EnableAutoConfiguration
 public class TuvDataParserApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(TuvDataParserApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(TuvDataParserApplication.class, args);
+    }
 }

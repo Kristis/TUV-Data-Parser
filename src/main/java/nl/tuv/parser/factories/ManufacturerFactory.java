@@ -14,11 +14,10 @@ import java.util.List;
 public class ManufacturerFactory {
 
 
-
     public static List<Manufacturer> createManufactures(Document manufacturesDocument) {
         List<Element> manufactures = manufacturesDocument.getElementsByTag(ParsingConstants.SPAN_TAG);
         List<Manufacturer> manufacturesEntities = new ArrayList<>();
-        manufactures.stream().forEach(element -> {
+        manufactures.forEach(element -> {
             manufacturesEntities.add(createManufacturer(element));
         });
         return manufacturesEntities;
